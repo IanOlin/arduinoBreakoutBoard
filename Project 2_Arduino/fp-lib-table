@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name p2arduino)(type KiCad)(uri "$(KIPRJMOD)/p2arduino.pretty")(options "")(descr ""))
+  (lib (name "Project 2_Arduino")(type KiCad)(uri "$(KIPRJMOD)")(options "")(descr ""))
+  (lib (name project2)(type KiCad)(uri C:/Users/lsweet/Desktop/eclectronicsProject2/Project2_FE310/project2.pretty)(options "")(descr ""))
+)
