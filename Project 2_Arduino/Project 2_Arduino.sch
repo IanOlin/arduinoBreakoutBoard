@@ -543,17 +543,6 @@ Text Notes 700  5275 0    197  ~ 0
 Reset Switch
 Text Notes 2275 1100 0    197  ~ 0
 Microcontroller
-$Comp
-L Crystal Y1
-U 1 1 59DFEE18
-P 5075 2400
-F 0 "Y1" H 5075 2550 50  0000 C CNN
-F 1 "16MHz" H 5075 2250 50  0000 C CNN
-F 2 "project2:TM16" H 5075 2400 50  0001 C CNN
-F 3 "" H 5075 2400 50  0001 C CNN
-	1    5075 2400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2100 3950 2200 3950
 Wire Wire Line
@@ -704,34 +693,6 @@ Wire Wire Line
 Connection ~ 1700 5925
 Wire Wire Line
 	1200 5925 1150 5925
-Wire Wire Line
-	4100 2250 5275 2250
-Wire Wire Line
-	4100 2350 4775 2350
-Wire Wire Line
-	4775 2350 4775 2550
-Wire Wire Line
-	4775 2550 5275 2550
-Wire Wire Line
-	5275 2550 5275 2250
-Connection ~ 5075 2550
-Connection ~ 5075 2250
-Wire Wire Line
-	5275 2375 5375 2375
-Wire Wire Line
-	5375 2375 5375 2425
-Connection ~ 5275 2375
-$Comp
-L GND #PWR09
-U 1 1 59DFF36B
-P 5375 2425
-F 0 "#PWR09" H 5375 2175 50  0001 C CNN
-F 1 "GND" H 5375 2275 50  0000 C CNN
-F 2 "" H 5375 2425 50  0001 C CNN
-F 3 "" H 5375 2425 50  0001 C CNN
-	1    5375 2425
-	1    0    0    -1  
-$EndComp
 Text Notes 8175 4825 0    197  ~ 0
 Header Pins
 Text Notes 7625 1275 0    197  ~ 0
@@ -878,14 +839,52 @@ Wire Wire Line
 Text GLabel 10525 4625 2    60   Input ~ 0
 GND
 $Comp
-L Crystal_GND24 Y?
+L Crystal_GND24 Y1
 U 1 1 59DF0F95
-P 5725 2375
-F 0 "Y?" H 5850 2575 50  0000 L CNN
-F 1 "Crystal_GND24" H 5850 2500 50  0000 L CNN
-F 2 "" H 5725 2375 50  0001 C CNN
-F 3 "" H 5725 2375 50  0001 C CNN
-	1    5725 2375
+P 5275 2375
+F 0 "Y1" V 5150 2875 50  0000 L CNN
+F 1 "Crystal_GND24" V 5075 2475 50  0000 L CNN
+F 2 "" H 5275 2375 50  0001 C CNN
+F 3 "" H 5275 2375 50  0001 C CNN
+	1    5275 2375
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 2250 4975 2250
+Wire Wire Line
+	4975 2250 4975 2125
+Wire Wire Line
+	4975 2125 5275 2125
+Wire Wire Line
+	5275 2125 5275 2225
+Wire Wire Line
+	5275 2525 5275 2575
+Wire Wire Line
+	4875 2575 5275 2575
+Wire Wire Line
+	4875 2350 4875 2575
+Wire Wire Line
+	4875 2350 4100 2350
+$Comp
+L GND #PWR?
+U 1 1 59E16207
+P 5475 2375
+F 0 "#PWR?" H 5475 2125 50  0001 C CNN
+F 1 "GND" H 5475 2225 50  0000 C CNN
+F 2 "" H 5475 2375 50  0001 C CNN
+F 3 "" H 5475 2375 50  0001 C CNN
+	1    5475 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59E16269
+P 5075 2375
+F 0 "#PWR?" H 5075 2125 50  0001 C CNN
+F 1 "GND" H 5075 2225 50  0000 C CNN
+F 2 "" H 5075 2375 50  0001 C CNN
+F 3 "" H 5075 2375 50  0001 C CNN
+	1    5075 2375
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
